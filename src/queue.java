@@ -5,6 +5,13 @@ public class queue {
 
     public void enqueue(Alert newAlert){
         //creates new queueRecord with alert al at end of queue
+        if(tail == null){
+            head = new queueRecord(newAlert);
+            tail = head;
+        } else {
+            tail.next = new queueRecord(newAlert);
+            tail = tail.next;
+        }
     }
     public Alert dequeue(){
         //moves head to refer to next item
@@ -16,5 +23,14 @@ public class queue {
         //returns total number of items in queue
     }
 
+    private class queueRecord{
+        public Alert alert;
+        public queueRecord next;
+
+        public queueRecord(Alert al){
+            alert = al;
+            next = null;
+        }
+    }
 
 }
