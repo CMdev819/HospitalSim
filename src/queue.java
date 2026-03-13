@@ -4,7 +4,7 @@ public class queue {
     private queueRecord tail; //points to last object of queue
 
     public void enqueue(Alert newAlert){
-        //creates new queueRecord with alert al at end of queue
+        //creates new queueRecord with Alert al at end of queue
     }
     public Alert dequeue(){
         //moves head to refer to next item
