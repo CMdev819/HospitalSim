@@ -42,4 +42,12 @@ public class Patient {
     public int getAssignedRoom() {
         return assignedRoom;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDoB() {
+        return DoB;
+    }
 }
