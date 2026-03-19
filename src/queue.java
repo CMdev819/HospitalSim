@@ -11,7 +11,7 @@ public class queue {
     }
     public Alert peek(){
         //returns first item in queue
-        return head;
+        return head.alert;
     }
     public int count(){
         //returns total number of items in queue
