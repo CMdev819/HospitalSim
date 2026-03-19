@@ -11,9 +11,20 @@ public class queue {
     }
     public Alert peek(){
         //returns first item in queue
+        return head.alert;
     }
     public int count(){
         //returns total number of items in queue
+        if(head == null){
+            return 0;
+        }
+        int i = 0;
+        Alert current = head;
+        while(current.next != null){
+            i++;
+            current = current.next;
+        }
+        return i;
     }
 
 
