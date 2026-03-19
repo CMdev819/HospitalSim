@@ -18,9 +18,9 @@ public class queue {
         if(head == null){
             return null;
         } else {
-            Alert dequeuedAlert = head;
+            queueRecord dequeuedAlert = head;
             head = head.next;
-            return dequeuedAlert;
+            return dequeuedAlert.alert;
         }
     }
     public Alert peek(){
@@ -33,7 +33,7 @@ public class queue {
             return 0;
         }
         int i = 0;
-        Alert current = head;
+        queueRecord current = head;
         while(current.next != null){
             i++;
             current = current.next;
