@@ -15,6 +15,13 @@ public class queue {
     }
     public Alert dequeue(){
         //moves head to refer to next item
+        if(head == null){
+            return null;
+        } else {
+            Alert dequeuedAlert = head;
+            head = head.next;
+            return dequeuedAlert;
+        }
     }
     public Alert peek(){
         //returns first item in queue
